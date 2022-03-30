@@ -68,13 +68,27 @@ catTextElem.addEventListener('drop', (e) => {
 sunTextElem.addEventListener('drop', (e) => {
     e.preventDefault()
     let id = e.dataTransfer.getData('icon')
+    
 
     sunTextElem.appendChild(document.getElementById(id))
 
     if(sunTextElem.firstChild.id === sunElem.id){
         sunTextElem.style.backgroundColor = 'green'
+        
     } else{
         sunTextElem.style.backgroundColor = 'brown'
     }
+
+    
+    
    
 })
+
+
+/*
+if(sunTextElem.style.backgroundColor === 'green' && catTextElem.style.backgroundColor === 'green' && carTextElem.style.backgroundColor === 'green') {
+    const audio = new Audio('A')
+        audio.play()
+}
+
+*/
