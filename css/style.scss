@@ -141,3 +141,44 @@ body {
     }
 
 }
+
+@media screen and (max-width: 768px){
+    body{
+        header {
+            h1{
+                font-size: 1.5rem;
+            }
+
+        }
+        main{
+            .icons{
+                gap: 1rem;
+
+                .car-icon, 
+                .cat-icon,
+                .sun-icon {
+                    font-size: 2.5rem;
+                }
+            }
+
+            .texts{
+                gap: 1rem;
+                div{
+                    gap: 1rem;
+                    p{
+                        font-size: 2.5rem;
+                    }
+
+                    .car-text,
+                    .cat-text,
+                    .sun-text{
+                        font-size: 2.5rem ;
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
