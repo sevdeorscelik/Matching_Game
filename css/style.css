@@ -72,7 +72,7 @@ body main .icons .sun-icon {
   background-color: bisque;
 }
 
-body main .texts {
+body main .boxes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,7 +88,7 @@ body main .texts {
   gap: 2rem;
 }
 
-body main .texts div {
+body main .boxes div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,11 +101,11 @@ body main .texts div {
   gap: 2rem;
 }
 
-body main .texts div p {
+body main .boxes div p {
   font-size: 5rem;
 }
 
-body main .texts div .car-text {
+body main .boxes div .car-box {
   width: 200px;
   height: 200px;
   text-align: center;
@@ -113,7 +113,7 @@ body main .texts div .car-text {
   border: dotted 5px black;
 }
 
-body main .texts div .cat-text {
+body main .boxes div .cat-box {
   width: 200px;
   height: 200px;
   text-align: center;
@@ -121,7 +121,7 @@ body main .texts div .cat-text {
   border: dotted 5px black;
 }
 
-body main .texts div .sun-text {
+body main .boxes div .sun-box {
   width: 200px;
   height: 200px;
   text-align: center;
@@ -141,18 +141,18 @@ body main .texts div .sun-text {
   body main .icons .sun-icon {
     font-size: 2.5rem;
   }
-  body main .texts {
+  body main .boxes {
     gap: 1rem;
   }
-  body main .texts div {
+  body main .boxes div {
     gap: 1rem;
   }
-  body main .texts div p {
+  body main .boxes div p {
     font-size: 2.5rem;
   }
-  body main .texts div .car-text,
-  body main .texts div .cat-text,
-  body main .texts div .sun-text {
+  body main .boxes div .car-box,
+  body main .boxes div .cat-box,
+  body main .boxes div .sun-box {
     font-size: 2.5rem;
     width: 100px;
     height: 100px;

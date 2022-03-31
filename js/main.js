@@ -1,10 +1,10 @@
 
 const carElem = document.querySelector('#car')
-const carTextElem = document.querySelector('.car-text')
-const catTextElem = document.querySelector('.cat-text')
+const carBoxElem = document.querySelector('.car-box')
+const catBoxElem = document.querySelector('.cat-box')
 const catElem = document.querySelector('#cat')
-const sunElem = document.querySelector('.sun-icon')
-const sunTextElem =document.querySelector('.sun-text')
+const sunElem = document.querySelector('#sun')
+const sunBoxElem =document.querySelector('.sun-box')
 
 
 
@@ -24,59 +24,59 @@ sunElem.addEventListener('dragstart', (e) => {
 
 //-----------------------------------------------------------------------------------
 
-carTextElem.addEventListener('dragover', (e) => {
+carBoxElem.addEventListener('dragover', (e) => {
     e.preventDefault()
 })
 
-catTextElem.addEventListener('dragover', (e) => {
+catBoxElem.addEventListener('dragover', (e) => {
     e.preventDefault()
 })
 
-sunTextElem.addEventListener('dragover', (e) => {
+sunBoxElem.addEventListener('dragover', (e) => {
     e.preventDefault()
 })
 
 //----------------------------------------------------------------------------------
 
-carTextElem.addEventListener('drop', (e) => {
+carBoxElem.addEventListener('drop', (e) => {
     e.preventDefault()
 
     let id = e.dataTransfer.getData('icon')
-    carTextElem.appendChild(document.getElementById(id))
+    carBoxElem.appendChild(document.getElementById(id))
     
-    if(carTextElem.firstChild.id === carElem.id){
-        carTextElem.style.backgroundColor = 'green'
+    if(carBoxElem.firstChild.id === carElem.id){
+        carBoxElem.style.backgroundColor = 'green'
     } else{
-        carTextElem.style.backgroundColor = 'brown'
+        carBoxElem.style.backgroundColor = 'brown'
     }
  
 })
 
-catTextElem.addEventListener('drop', (e) => {
+catBoxElem.addEventListener('drop', (e) => {
     e.preventDefault()
     let id = e.dataTransfer.getData('icon')
     
-    catTextElem.appendChild(document.getElementById(id))
+    catBoxElem.appendChild(document.getElementById(id))
 
-    if(catTextElem.firstChild.id === catElem.id){
-        catTextElem.style.backgroundColor = 'green'
+    if(catBoxElem.firstChild.id === catElem.id){
+        catBoxElem.style.backgroundColor = 'green'
     } else{
-        catTextElem.style.backgroundColor = 'brown'
+        catBoxElem.style.backgroundColor = 'brown'
     }    
 })
 
-sunTextElem.addEventListener('drop', (e) => {
+sunBoxElem.addEventListener('drop', (e) => {
     e.preventDefault()
     let id = e.dataTransfer.getData('icon')
     
 
-    sunTextElem.appendChild(document.getElementById(id))
+    sunBoxElem.appendChild(document.getElementById(id))
 
-    if(sunTextElem.firstChild.id === sunElem.id){
-        sunTextElem.style.backgroundColor = 'green'
+    if(sunBoxElem.firstChild.id === sunElem.id){
+        sunBoxElem.style.backgroundColor = 'green'
         
     } else{
-        sunTextElem.style.backgroundColor = 'brown'
+        sunBoxElem.style.backgroundColor = 'brown'
     }
 
     
@@ -84,11 +84,3 @@ sunTextElem.addEventListener('drop', (e) => {
    
 })
 
-
-/*
-if(sunTextElem.style.backgroundColor === 'green' && catTextElem.style.backgroundColor === 'green' && carTextElem.style.backgroundColor === 'green') {
-    const audio = new Audio('A')
-        audio.play()
-}
-
-*/
