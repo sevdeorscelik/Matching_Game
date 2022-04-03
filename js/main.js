@@ -24,6 +24,7 @@ sunElem.addEventListener('dragstart', (e) => {
 
 //-----------------------------------------------------------------------------------
 
+
 carBoxElem.addEventListener('dragover', (e) => {
     e.preventDefault()
 })
@@ -35,6 +36,7 @@ catBoxElem.addEventListener('dragover', (e) => {
 sunBoxElem.addEventListener('dragover', (e) => {
     e.preventDefault()
 })
+
 
 //----------------------------------------------------------------------------------
 
